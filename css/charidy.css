@@ -1,0 +1,801 @@
+@charset "utf-8";
+/* CSS Document */
+
+	body {
+		width:100%;
+		  font-family: 'Roboto';
+	}
+a, a:hover, a:visited, a:focus, a:active{
+	color:#014bae;
+}
+	#firstcolumn {
+		    font: normal 16px/21px Roboto;
+    color: #000;
+	}
+	#second-column{
+			
+text-transform: uppercase;
+	}
+	#content {
+    width:100%;
+    margin:30px auto;
+		font-size:26px;
+}
+	.error {
+		color:red;
+	}
+#video-background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+            width: 100%;
+	height:300px;
+        }
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+	min-height: 300px;
+}
+
+.topimage {
+text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+.thermometer {
+    float: left;
+    margin:0 150px;
+}
+.thermometer {
+    width:170px;
+    height:500px;
+    position: relative;
+    background: #1d55b6;
+    border:1px solid #aaa;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+         -o-border-radius: 12px;
+            border-radius: 12px;
+
+    -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+       -moz-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+        -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+         -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+            box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+}
+
+.thermometer .track {
+    height:480px;
+    top:5px;
+    width:120px;
+    border: 1px solid #aaa;
+    position: relative;
+    margin:0 auto;
+    background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,0,0)), color-stop(1%,rgb(255,255,255)));
+    background: -webkit-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:      -o-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:     -ms-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:    -moz-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:   linear-gradient(to bottom, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background-position: 0 -1px;
+    background-size: 100% 5%;
+}
+
+.thermometer .progressthermo {
+    height:0%;
+    width:100%;
+    background: #f2b644;
+    position: absolute;
+    bottom:0;
+    left:0;
+	border-radius:25px;
+}
+
+.thermometer .goal {
+    position:absolute;
+    top:0;
+}
+
+.thermometer .amount {
+    display: inline-block;
+    padding:0 5px 0 160px;
+    border-top:1px solid black;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color:#333;
+}
+
+.thermometer .progressthermo .amount {
+    padding:0 160px 0 5px;
+    position: absolute;
+    border-top:1px solid #060;
+    color:#38a0c7;
+    right:0;
+}
+
+#teams .amount {
+	line-height:0;
+}
+
+.goal_people .progressthermo .amount {
+	display:none;opacity: 0;
+	
+}
+.thermometer.horizontal {
+    width:100%;
+    height:30px;
+}
+.thermometer.horizontal.goal_people {
+    
+    height:17px;width:50%; margin-left:25%;
+}
+
+.thermometer.horizontal .track {
+    width:99%;
+    left:0;
+    height:20px;
+   /*margin:1px auto;*/
+	border-radius:25px;
+
+
+}
+.thermometer.horizontal.goal_people .track {
+    height:6px;background: white; 
+   }
+
+.thermometer.horizontal .progressthermo {
+    height:100%;
+    width:0%;
+}
+
+.thermometer.horizontal .goal {
+    left:100%;
+    height:100%;
+}
+
+.thermometer.horizontal .amount {
+    bottom:0;
+    position: absolute;
+    padding:0 5px 35px 5px;
+    border-top:0;
+  /*  border-left:1px solid black;*/
+
+}
+
+.thermometer.horizontal .progressthermo .amount {
+    border-left:0;
+    border-top:0;
+    border-right:1px solid #060;
+	font-style: italic;
+}
+
+
+
+	#totalprogress
+{
+	      min-height: 50px;
+    font-size: 36px;
+    color: rgb(51 13 72);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.totalamountteam{
+	color:#1d55b6!important;
+	font-size:28px!important;
+	
+}
+	#second-column li {
+		list-style-type: none;
+/*height: 50px;*/
+		/*background-color:#1d55b6  ;*/
+		color: #204d74;
+/*		border: thin solid #000;*/
+		margin-bottom:10px;
+		font-size:16px;
+		font-weight: bold;
+/*		padding-left:25px;*/
+		padding-top:10px;	padding-bottom:10px;
+	}
+	
+	#second-column  ul{
+
+		overflow-y: auto;
+		
+	}
+	.btn-primary {
+    color: #014bae;
+    background-color: #fbdb52;
+    border-color: #1d55b6;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+	color: #F2B644;
+    background-color: #014bae;
+    border-color: #F2B644;
+}
+
+	.rtamt {
+		float: right;
+font-weight: bold; color:#000;}
+
+/*new styles */
+.headline h1{
+	margin-top:2rem;
+	text-align: center;
+	font-weight: bold;
+	font-size:1.5rem;
+	line-height: 1.25;
+}
+.headline-big{
+	font-size:2rem;
+}
+.headline h3{
+	margin-bottom:2rem;
+	font-size:1.2rem;
+	text-align: center;
+	font-weight: bold;
+}
+	.innertext{
+		font-size:18px;
+	
+		
+	}
+.innertext strong, .innertext h1{
+	   color: #1d55b6;
+}
+#pastdonation {
+
+max-height:750px;
+margin-bottom:120px;
+
+/*    border: #6E6A6A 1px solid;*/
+	}
+
+#pastdonation ul li:before {
+content:none;
+
+}
+ul#donationsul  {
+	margin:0;
+	padding:0;
+	height: 400px;
+display: flex;
+
+flex-flow: row wrap;
+
+justify-content: flex-start;
+overflow-y: scroll;
+}
+#donationsul i{
+	font-size:12px;color:#000;
+	
+} .tab-pane {
+	padding-top:15px;
+}
+#donationsul li {
+    list-style: none;
+    min-height: 100px;
+    float: left;
+    margin-top: 15px;
+    vertical-align: middle;
+	
+}
+.teambox{
+	border: solid thin #bbb;
+	padding: 15px;
+	display: block;
+	border-radius: 10px;
+	height:100%;
+    letter-spacing: .5px;
+	font-size:16px;
+	line-height: 1.25;
+	text-align: center;
+}
+.teambox a{
+	font-weight: bold;
+    font-size: 18px;
+}
+#donationsul li:nth-child(odd) {
+  /*  background-color: #B6B6B6;*/
+}
+#pastdonation ul li{
+
+/*padding-left:10px;*/
+
+color:#337ab7;
+font-weight:bold;
+}
+#pastdonation ul {
+
+margin-bottom:0px;
+}
+#pastdonation h1{
+padding-top:15px;
+color:#004d69;
+text-transform:uppercase;
+	text-align: center;
+}
+.teamgoallisting strong {
+	    font-size: 22px;
+    line-height: 1.5;
+}
+#teamamount {
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #fff;
+}
+.teamname {
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(51 13 72);
+    text-align: center;
+
+}
+.teamname p {
+	margin-top: 0;
+}
+.teamsum {
+	clear: both;
+    color: #4b4b4b;
+    font-weight: 600;
+    font-size: 20px;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.teamdonors {
+
+    color: #4a4a4a;
+    font-weight: normal;
+    font-size: 18px;
+	text-align: center;
+
+}
+.close-team{
+	color: #4b4b4b;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.close-team p{
+	margin:.5rem 0 0;
+}
+#totaldonors{
+	font-size:14px;
+	border: 1px solid #000;
+	padding:10px;
+	color:#004d69;
+}
+
+
+	form {
+    
+     border: none; 
+     padding: 0; 
+     margin: 0; 
+     width: inherit; 
+     background: none; 
+     box-shadow: inherit; 
+	}
+		
+	#countdowndiv {font-size: 24px;
+   
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    margin-top: 25px;}
+	
+/*
+	#firstcolumn {width:70%;float:left; padding-right:50px; clear:both;
+	}
+*/
+	
+	#firstcolumn img {
+		max-width: 90%;
+	}
+/*
+	#second-column{width:25%;float:left
+		
+	}
+	
+*/
+	.grid3 {
+		width:25%;float:left; text-align: center; padding:10px;
+		    border: thin solid #000;
+    border-radius: 50%;
+    margin-right: 20px;
+	}
+.gridfirst{
+	width:15%;float:left; text-align: center; padding:10px;padding-top:40px;
+}
+	.bolddonor {
+		color:#1d55b6;
+		font-weight: bold;
+		display: block;font-size: 1.1em;
+	}
+.browntext {
+	color:#1d55b6;
+}
+.bonusmessage, .bonusmessage2 {
+    font-size: 2em;
+	line-height: 1.2em;	
+    color: #1d55b6;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+	.sponsorinfo {
+		margin-bottom:30px;
+	}
+	.donatebox  {border: solid 1px black;padding:10px; font-size:18px;text-align: center;  border-radius: 8px;-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);}
+.project-tab {border: solid 1px black;padding:10px; font-size:20px;  border-radius: 8px;-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);}
+
+.donatebox.timer {
+	min-height:350px;
+	margin-bottom:30px;
+
+		
+}
+.donatebox.donors{
+	    text-align: left;
+    height: 800px;
+    overflow: hidden;
+}
+.donors h3, .teams h3{
+	text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1d55b6;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    letter-spacing: 1px;
+    margin: .5rem;
+	font-size:1.25rem;
+}
+.donors ul{
+	list-style: none;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+.donors ul li{
+	border-bottom: thin solid #bbb;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.donors ul li small{
+	font-style: italic;
+    font-size: 70%;
+    display: inline-block;
+    padding-top: .5rem;
+}
+.donors h3{
+	text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1d55b6;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    letter-spacing: 1px;
+    margin: .5rem;
+	font-size:1.25rem;
+}
+.donatebox .goaltotal {
+	margin-bottom:20px;
+}
+
+.sponsorinforight {
+	clear:both;
+	margin-bottom:10px;
+	
+}
+	.sponsorinforight .donatebox  {
+		margin-left:0px;
+}
+	.copysponsorinfo.donatebox { 
+	
+	max-width: 100%;
+	margin:0;
+		box-shadow: none;
+
+	}
+	.copysponsorinfo.donatebox label,	.copysponsorinfo.donatebox input ,	.copysponsorinfo.donatebox span  {
+			font-size:20px;
+	font-weight: bold;
+		
+	}
+.topbar {
+	background-color: #000;
+
+	
+	width: 120%;
+	padding:30px;
+	position: relative;
+	left:-10%;
+	min-height: 70px;
+}
+.topbar img{
+	float: left;
+	padding-left:10%;
+	padding-right:40px;
+	padding-bottom:20px;
+}
+.topbar h1 { 
+	color:#fff;
+	padding-left:30px;
+		padding-top:15px;font-size:36px;
+	
+}
+#tabs {
+	margin-bottom:40px;
+}
+
+#modalVideo .modal-dialog{
+	width:900px;
+	
+}
+.insideboxes{
+	padding:0 7px;
+}
+.sponsor-image, .sponsor-text{
+	padding:0;
+}
+.sponsor-image img{
+	width:100%;
+	height:auto;
+}
+.sponsor-text{
+	border-left:1px solid #aaa;
+}
+.panel-body {
+ padding: 0;
+}
+.panel-body img  {
+	height: 70%;
+	width: 70%;
+	
+}
+.panel-heading{
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color:#014bae;
+	color:#fff;
+	border-top-left-radius: 0;
+}
+
+.panel:hover .panel-heading {
+	background-color:rgba(242, 182, 68, 0.5);
+	color: #014bae;
+}
+.donate-sponsor{
+	cursor: pointer;
+	overflow: auto;
+	background-color:#f5f5f5;
+	border:1px solid #014bae;
+}
+.sponsorship{
+	    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.panel-footer{
+	font-size:1.1rem;
+}
+.about .panel{
+	margin:.5rem;
+}
+.about .panel-heading{
+	padding:0;
+}
+.about .panel-title{
+	text-transform: uppercase;
+    font-weight: bold;
+    background-color: #1d55b6;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+}
+.about .panel-title a:hover, .about .panel-title a:visited, .about .panel-title a:focus, .about .panel-title a:active{
+	color:#fff;
+}
+
+.about .panel-body{
+	padding: 1rem;
+    text-align: justify;
+}
+
+/*large screens*/
+	@media  (max-width: 1450px) and (min-width: 1170px)  {
+		
+		.insideboxes, .insideboxes .panel-heading  {
+		
+			padding: 7px;
+			
+		}
+}
+/*cellphone*/
+	@media only screen and (max-device-width: 480px) {
+
+		.jumbotron {
+			min-height: 250px;
+			
+		}
+		.jumbotron video  {
+			width:100%;
+			min-height:300px;
+		}
+/*
+		#firstcolumn, #second-column{
+			width:100%;
+			padding:0;
+			margin:0;
+		}
+*/.panel-body img {
+    height: 50%;
+    width: 75%;
+}
+		.grid3,.gridfirst{
+			width:100%;
+			margin-left:10px;
+		}
+		.thermometer.horizontal {
+			width:200px;
+		}
+
+.thermometer {
+	margin:0 75px;
+		}
+		
+		.donatebox, .donateboxover
+		{
+			width:100;
+			padding:0;
+			margin-left:0;
+				margin-top:10px;
+			
+				
+		}
+			#firstcolumn img {
+		max-width: 100%;
+				
+	}
+		#divdonations {
+		
+		
+		}
+		#teams ul {
+	
+	line-height: 1;
+
+}
+		.topbar img{
+			width:85%;
+		}
+		
+		#donationsul li {
+			width:100%;
+		}
+			.topimage {
+			min-height: 100px
+	}
+	.topimage img {
+		height: 100px;
+	}
+		
+		.donatebox.timer {
+	min-height:350px;
+	margin-top:20px
+		
+}
+		.donatebox .goaltotal {
+    margin-bottom: 50px;
+}
+	.teamthermodiv {
+			padding-top:25px;
+		}
+				.blue-back {
+		margin-top:25px;
+		}
+		.panel-footer{
+			font-size:12px;
+		}
+    } /*end cell */
+
+	/*ipad*/
+	@media only screen and (min-device-width: 481px) and (max-device-width: 1023px)  {
+		body{
+		width:100%;
+		margin-left:5px;
+		margin-right:5px;
+	}
+		
+/*
+		#firstcolumn, #second-column{
+			width:45%;
+		}
+*/
+		.gridfirst {
+			width:100%;
+		}
+		.grid3{
+			border:none;
+			width:30%;
+		}
+		#tabs {
+			width:700px;
+			margin-bottom:5px;
+			
+		}
+			.topimage {
+			min-height: 200px
+	}
+	.topimage img {
+		height: 100px;
+	}
+	} 	
+/*cellphone and ipad*/
+@media only screen and  (max-device-width: 800px)  {
+	body{
+		width:100%;
+		margin-left:5px;
+		margin-right:5px;
+	}
+	
+
+	#content {
+		width:100%;
+		font-size: 24px;
+		
+	}
+.topbar h1{
+			clear:both;
+			display:block;
+	text-align: center;
+		}
+	.rtamt {
+	/*float:none;*/
+	}
+	
+	#donatebtnpaypal{
+		margin-top:15px;
+	}
+
+	} 
+
+/*bigger than ipad*/
+	@media only screen and (min-device-width: 760px) { 
+	.thermometer.horizontal {
+    margin:20px 15px
+}
+
+		#matchers {
+			padding-left:30px;
+			line-height: 1.8em;
+		}		
+	}

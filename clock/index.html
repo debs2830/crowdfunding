@@ -1,0 +1,33 @@
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/events/clock/inc/TimeCircles.css" />
+            <div id="DateCountdown" data-date="2019-06-04 16:00:00" style="padding: 0px; box-sizing: border-box; background-color: #E0E8EF"></div>
+            
+          <script type="text/javascript" src="/events/clock/inc/TimeCircles.js"></script>
+<script>$(document).ready(function(){
+			//options
+			 /*https://www.jqueryscript.net/time-clock/Attractive-jQuery-Circular-Countdown-Timer-Plugin-TimeCircles.html
+			https://www.jqueryscript.net/time-clock/Attractive-jQuery-Circular-Countdown-Timer-Plugin-TimeCircles.html
+			4
+	circle_bg_color: "#60686F", 
+	
+	fg_width: 0.1, //  sets the width of the foreground circle.
+07
+	bg_width: 1.2, // sets the width of the backgroundground circle.
+08
+	text_size: 0.07, // This option sets the fon*/
+			
+			var dateObj = new Date().toLocaleString("en-US", {timeZone: "America/Denver"});
+			
+			
+		//	var day = dateObj.getUTCDate();
+			
+		dateshow = (dateObj > '6/03/2019'? false:true);
+			
+           $("#DateCountdown").TimeCircles( {time: { Days: { show: dateshow }, Hours: { show: true }, Minutes: { show: true }, 	Seconds:{show:true} },  direction: "Counter-Clockwise"} );
+         //   $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: true }, Minutes: { show: false }, 	Seconds:{show:false} },  direction: "Counter-Clockwise"});
+            
+           });</script>

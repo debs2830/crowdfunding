@@ -1,0 +1,643 @@
+@charset "utf-8";
+/* CSS Document */
+
+	body {
+		width:90%;
+		  font-family: 'Roboto';
+	}
+	#firstcolumn {
+		    font: normal 16px/21px Roboto;
+    color: #000;
+	}
+	#second-column{
+			
+text-transform: uppercase;
+	}
+	#content {
+    width:100%;
+    margin:30px auto;
+		font-size:26px;
+}
+	.error {
+		color:red;
+	}
+.topimage {
+	text-align: center;
+
+width: 100%;
+height: auto;
+background-image: url("../img/crowdfunding.jpg");
+min-height: 400px;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.thermometer {
+    float: left;
+    margin:0 150px;
+}
+.thermometer {
+    width:170px;
+    height:500px;
+    position: relative;
+    background: rgb(153, 102, 153);
+    border:1px solid #aaa;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+         -o-border-radius: 12px;
+            border-radius: 12px;
+
+    -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+       -moz-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+        -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+         -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+            box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+}
+
+.thermometer .track {
+    height:480px;
+    top:5px;
+    width:120px;
+    border: 1px solid #aaa;
+    position: relative;
+    margin:0 auto;
+    background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,0,0)), color-stop(1%,rgb(255,255,255)));
+    background: -webkit-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:      -o-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:     -ms-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:    -moz-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:   linear-gradient(to bottom, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background-position: 0 -1px;
+    background-size: 100% 5%;
+}
+
+.thermometer .progressthermo {
+    height:0%;
+    width:100%;
+    background: #337ab7;
+    position: absolute;
+    bottom:0;
+    left:0;
+	border-top-left-radius: 25px;
+
+border-bottom-left-radius: 25px;
+}
+
+.thermometer .goal {
+    position:absolute;
+    top:0;
+}
+
+.thermometer .amount {
+    display: inline-block;
+    padding:0 5px 0 160px;
+    border-top:1px solid black;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color:#333;
+}
+
+.thermometer .progressthermo .amount {
+    padding:0 160px 0 5px;
+    position: absolute;
+    border-top:1px solid #060;
+    color:#204d74;
+    right:0;
+}
+
+#teams .amount {
+	line-height:0;
+}
+
+.thermometer.horizontal {
+    width:100%;
+    height:30px;
+}
+
+.thermometer.horizontal .track {
+    width:99%;
+    left:0;
+    height:20px;
+   /*margin:1px auto;*/
+	border-radius:25px;
+
+ /*   background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(0,0,0)), color-stop(1%,rgb(255,255,255)));
+    background: -webkit-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:      -o-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:     -ms-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:    -moz-linear-gradient(left, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background:   linear-gradient(to right, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
+    background-size: 5% 100%;*/
+}
+
+.thermometer.horizontal .progressthermo {
+    height:100%;
+    width:0%;
+}
+
+.thermometer.horizontal .goal {
+    left:100%;
+    height:100%;
+}
+
+.thermometer.horizontal .amount {
+    bottom:0;
+    position: absolute;
+    padding:0 5px 35px 5px;
+    border-top:0;
+  /*  border-left:1px solid black;*/
+
+}
+
+.thermometer.horizontal .progressthermo .amount {
+    border-left:0;
+    border-top:0;
+    border-right:1px solid #060;
+	font-style: italic;
+}
+
+
+
+	#totalprogress
+{
+	      min-height: 50px;
+    font-size: 36px;
+    color: rgb(153, 102, 153);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+	#second-column li {
+		list-style-type: none;
+/*height: 50px;*/
+		/*background-color:rgb(153, 102, 153)  ;*/
+		color: #204d74;
+/*		border: thin solid #000;*/
+		margin-bottom:10px;
+		font-size:16px;
+		font-weight: bold;
+/*		padding-left:25px;*/
+		padding-top:10px;	padding-bottom:10px;
+	}
+	
+	#second-column  ul{
+
+		overflow-y: auto;
+		
+	}
+	.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+	.rtamt {
+		float: right;
+margin-right: 50px;
+font-weight: bold; color:#000;}
+
+/*new styles */
+	
+	.innertext{
+		font-size:18px;
+	
+		padding-right:20px;;
+	}
+.innertext strong, .innertext h1{
+	   color: rgb(153, 102, 153);
+}
+#pastdonation {
+
+max-height:750px;
+margin-bottom:120px;
+
+/*    border: #6E6A6A 1px solid;*/
+	}
+
+#pastdonation ul li:before {
+content:none;
+
+}
+ul#donationsul  {
+	margin:0;
+	padding:0;
+	height: 400px;
+display: flex;
+
+flex-flow: row wrap;
+
+justify-content: flex-start;
+overflow: scroll;
+}
+#donationsul i{
+	font-size:12px;color:#000;
+	
+} .tab-pane {
+	padding-top:15px;
+}
+#donationsul li {
+    list-style: none;
+    padding: 20px;
+    min-height: 100px;
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    border: solid thin black;
+    border-radius: 10px;
+    margin-top: 15px;
+    vertical-align: middle;
+
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	
+}
+#donationsul li:nth-child(odd) {
+  /*  background-color: #B6B6B6;*/
+}
+#teams li {
+	text-align: center;
+	line-height: 1;
+
+}
+#pastdonation ul li{
+
+/*padding-left:10px;*/
+
+color:#337ab7;
+font-weight:bold;
+}
+#pastdonation ul {
+
+margin-bottom:0px;
+}
+#pastdonation h1{
+padding-top:15px;
+color:#004d69;
+text-transform:uppercase;
+	text-align: center;
+}
+.teamgoallisting{
+	text-align:left;
+}
+.teamgoallisting strong {
+	font-size:1.2em;
+}
+#teamamount {
+
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+	padding-bottom:5px;
+	padding-top:5px;
+    background-color: #fff;
+	border:thin grey solid;
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.teamname {
+
+    overflow: hidden;
+    position: relative;
+    line-height: 1.4em;
+    max-height: 4.2em;
+    margin-right: -1em;
+	margin-bottom:1em;
+	
+    font-size: 24px;
+    font-weight: 800;
+    color:	rgb(50, 68, 75);
+	vertical-align: middle;
+
+}
+.teamname p {
+	vertical-align: middle;
+}
+.teamsum {
+	clear: both;
+    color: #4b4b4b;
+    font-weight: 600;
+    font-size: 20px;
+	text-align: center;
+}
+.teamdonors {
+
+    color: #4a4a4a;
+    font-weight: normal;
+    font-size: 18px;
+	text-align: center;
+
+}
+#totaldonors{
+	font-size:14px;
+	border: 1px solid #000;
+	padding:10px;
+	color:#004d69;
+}
+
+
+	form {
+    
+     border: none; 
+     padding: 0; 
+     margin: 0; 
+     width: inherit; 
+     background: none; 
+     box-shadow: inherit; 
+	}
+		
+	#countdowndiv {font-size: 24px;
+   
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    margin-top: 25px;}
+	
+/*
+	#firstcolumn {width:70%;float:left; padding-right:50px; clear:both;
+	}
+*/
+	
+	#firstcolumn img {
+		max-width: 90%;
+	}
+/*
+	#second-column{width:25%;float:left
+		
+	}
+	
+*/
+	.grid3 {
+		width:25%;float:left; text-align: center; padding:10px;
+		    border: thin solid #000;
+    border-radius: 50%;
+    margin-right: 20px;
+	}
+.gridfirst{
+	width:15%;float:left; text-align: center; padding:10px;padding-top:40px;
+}
+	.bolddonor {
+		color:rgb(153, 102, 153);
+		font-weight: bold;
+		display: block;font-size: 1.1em;
+	}
+.browntext {
+	color:rgb(153, 102, 153);
+}
+.bonusmessage, .bonusmessage2 {
+    font-size: 2em;
+	line-height: 1.2em;	
+    color: rgb(153, 102, 153);
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+	.sponsorinfo {
+		margin-bottom:50px;
+	}
+	.donatebox  {border: solid 1px black;padding:10px; font-size:20px;text-align: center;  border-radius: 8px;-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);}
+.project-tab {border: solid 1px black;padding:10px; font-size:20px;  border-radius: 8px;-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);}
+
+.donatebox.timer {
+	min-height:350px;
+	margin-top:20px
+		
+}
+.donatebox .goaltotal {
+	margin-bottom:20px;
+}
+
+.sponsorinforight {
+	clear:both;
+	margin-bottom:10px;
+	
+}
+	.sponsorinforight .donatebox  {
+		margin-left:0px;
+}
+	.copysponsorinfo.donatebox { 
+	
+	max-width: 100%;
+	margin:0;
+		box-shadow: none;
+
+	}
+	.copysponsorinfo.donatebox label,	.copysponsorinfo.donatebox input ,	.copysponsorinfo.donatebox span  {
+			font-size:20px;
+	font-weight: bold;
+		
+	}
+.topbar {
+	background-color: #000;
+
+	
+	width: 120%;
+	padding:30px;
+	position: relative;
+	left:-10%;
+	min-height: 70px;
+}
+.topbar img{
+	float: left;
+	padding-left:10%;
+	padding-right:40px;
+	padding-bottom:20px;
+}
+.topbar h1 { 
+	color:#fff;
+	padding-left:30px;
+		padding-top:15px;font-size:36px;
+	
+}
+#tabs {
+	margin-bottom:40px;
+}
+
+#modalVideo .modal-dialog{
+	width:900px;
+	
+}
+.panel-body {
+ /*   padding: 0;*/
+}
+.panel-body img  {
+	height: 100%;
+	width: 100%;
+	
+}
+.panel-heading{
+	text-transform: uppercase;
+}
+/*large screens*/
+	@media  (max-width: 1450px) and (min-width: 1170px)  {
+		
+		.insideboxes, .insideboxes .panel-heading  {
+		
+			padding: 0;
+			
+		}
+}
+/*cellphone*/
+	@media only screen and (max-device-width: 480px) {
+
+		
+/*
+		#firstcolumn, #second-column{
+			width:100%;
+			padding:0;
+			margin:0;
+		}
+*/.panel-body img {
+    height: 50%;
+    width: 75%;
+}
+		.grid3,.gridfirst{
+			width:100%;
+			margin-left:10px;
+		}
+		.thermometer.horizontal {
+			width:200px;
+		}
+
+.thermometer {
+	margin:0 75px;
+		}
+		
+		.donatebox, .donateboxover
+		{
+			width:100;
+			padding:0;
+			margin-left:0;
+				margin-top:10px;
+			
+				
+		}
+			#firstcolumn img {
+		max-width: 100%;
+				
+	}
+		#divdonations {
+		
+		
+		}
+		#teams ul {
+	
+	line-height: 1;
+
+}
+		.topbar img{
+			width:85%;
+		}
+		
+		#donationsul li {
+			width:100%;
+		}
+			.topimage {
+			min-height: 100px
+	}
+	.topimage img {
+		height: 100px;
+	}
+		
+		.donatebox.timer {
+	min-height:350px;
+	margin-top:20px
+		
+}
+		.donatebox .goaltotal {
+    margin-bottom: 50px;
+}
+	.teamthermodiv {
+			padding-top:25px;
+		}
+				.blue-back {
+		margin-top:25px;
+		}
+		.panel-footer{
+			font-size:12px;
+		}
+    } /*end cell */
+
+	/*ipad*/
+	@media only screen and (min-device-width: 481px) and (max-device-width: 1023px)  {
+		body{
+		width:100%;
+		margin-left:5px;
+		margin-right:5px;
+	}
+		
+/*
+		#firstcolumn, #second-column{
+			width:45%;
+		}
+*/
+		.gridfirst {
+			width:100%;
+		}
+		.grid3{
+			border:none;
+			width:30%;
+		}
+		#tabs {
+			width:700px;
+			margin-bottom:5px;
+			
+		}
+			.topimage {
+			min-height: 200px
+	}
+	.topimage img {
+		height: 100px;
+	}
+	} 	
+/*cellphone and ipad*/
+@media only screen and  (max-device-width: 800px)  {
+	body{
+		width:100%;
+		margin-left:5px;
+		margin-right:5px;
+	}
+	
+
+	#content {
+		width:100%;
+		font-size: 24px;
+		
+	}
+.topbar h1{
+			clear:both;
+			display:block;
+	text-align: center;
+		}
+	.rtamt {
+	/*float:none;*/
+	}
+	
+	#donatebtnpaypal{
+		margin-top:15px;
+	}
+
+	} 
+
+/*bigger than ipad*/
+	@media only screen and (min-device-width: 760px) { 
+	.thermometer.horizontal {
+    margin:20px 15px
+}
+
+		#matchers {
+			padding-left:30px;
+			line-height: 1.8em;
+		}		
+	}
